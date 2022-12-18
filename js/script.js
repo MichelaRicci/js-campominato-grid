@@ -20,10 +20,7 @@ const createCell = (content) => {
 
     cell.classList.add('cell');
 
-    cell.append(content);
-
     return cell;
-
     
 }
 // Prendo elementi dalla pagina 
@@ -57,6 +54,13 @@ play.addEventListener('click', function(){
         cell.addEventListener('click', () => {
             cell.classList.add('clicked');
 
+            const content = i;
+
+            cell.append(content);
+
+
+            console.log(i);
+            
         });
 
         grid.appendChild(cell);
