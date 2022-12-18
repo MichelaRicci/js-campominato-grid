@@ -15,12 +15,20 @@ console.log('JS OK');
 
 const grid = document.getElementById('grid');
 
+const play = document.getElementById('play');
+
 
 // Impostazioni griglia
 
 const rows = 10;
 const cols = 10;
 const totalCells = rows * cols; 
+
+
+// Generazione celle al click del pulsante 
+
+play.addEventListener('click', function(){
+
 
 
 //Randomizzo 100 celle
@@ -36,9 +44,8 @@ for(let i = 0; i < totalCells; i++) {
         cell.classList.add('clicked');
     });
 
-
     grid.appendChild(cell);
 }
 
-
+})
 
