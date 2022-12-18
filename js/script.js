@@ -30,6 +30,15 @@ for(let i = 0; i < totalCells; i++) {
     const cell = document.createElement('div');
     cell.classList.add('cell');
 
+
+    // Aggiungo eventListener 
+    cell.addEventListener('click', function() {
+        cell.classList.add('clicked');
+    });
+
+
     grid.appendChild(cell);
 }
+
+
 
