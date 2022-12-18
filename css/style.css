@@ -19,7 +19,9 @@
     border: 1px solid black;
 
     cursor: pointer;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
