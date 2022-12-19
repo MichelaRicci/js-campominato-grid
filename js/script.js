@@ -41,6 +41,13 @@ const totalCells = rows * cols;
 
 play.addEventListener('click', function(){
 
+    // Cambio testo interno del punlsante 
+    play.innerText = 'Ricomincia';
+
+    // Svuoto la griglia 
+    grid.innerHTML = '';
+
+
 
 
     //Randomizzo 100 celle
@@ -54,13 +61,15 @@ play.addEventListener('click', function(){
         cell.addEventListener('click', () => {
             cell.classList.add('clicked');
 
+            
+            // Numeri all'interno della cella 
+
             const content = i;
 
             cell.append(content);
 
-
             console.log(i);
-            
+
         });
 
         grid.appendChild(cell);
